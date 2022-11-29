@@ -17,8 +17,14 @@ import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import { useState } from "react";
+import Link from 'next/link'; 
 
 export default function Home() {
+
+  const handleClickLinked = () => {
+    window.open("https://www.linkedin.com/in/jean-reyes-3027951b8/", "_blank");
+  };
+
   const [darkMode, setDarkMode] = useState(false);
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -42,7 +48,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="#"
+                  href="https://drive.google.com/file/d/18CVZC1IttUVVAerj3FmrAeNwKBoR-NuY/view?usp=share_link"
                 >
                   Resume
                 </a>
@@ -61,7 +67,9 @@ export default function Home() {
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
             <AiFillTwitterCircle />
-            <AiFillLinkedin />
+            <AiFillLinkedin
+            onClick={handleClickLinked}
+            />
             <AiFillYoutube />
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
@@ -77,7 +85,7 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image
                 src={design}
                 width={100}
@@ -91,7 +99,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">Figma</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image src={code} width={100} height={100} className="mx-auto" />
               <h3 className="text-lg font-medium pt-8 pb-2">My designs</h3>
               <p className="py-2">Some random words to take up space</p>
@@ -100,7 +108,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">Figma</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image
                 src={consulting}
                 width={100}
@@ -158,16 +166,16 @@ export default function Home() {
                 layout="responsive"
               />
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 h-full">
               <Image
                 src={web5}
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover "
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
               />
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 ">
               <Image
                 src={web6}
                 className="rounded-lg object-cover"

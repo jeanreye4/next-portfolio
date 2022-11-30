@@ -1,25 +1,33 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
-  AiFillTwitterCircle,
+  AiFillGithub,
   AiFillLinkedin,
-  AiFillYoutube,
+  AiFillMail,
 } from "react-icons/ai";
 import Image from "next/image";
 import deved from "../public/dev-ed-wave.png";
-import design from "../public/design.png";
+import backend_photo from "../public/backend-1.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
+import anime_logo from "../public/anime-logo.png";
+import Tic_Tac_Toe from "../public/Tic_Tac_Toe.png";
+import MARIO from "../public/MARIO.png";
+import League_of_Legends from "../public/League_of_Legends.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import { useState } from "react";
 import Link from 'next/link'; 
 
 export default function Home() {
+
+  const handleClickMail = () => {
+    window.open("reyesjean3068@gmail.com");
+  }
+
+  const handleClickGithub = () => {
+    window.open("https://github.com/jeanreye4", "_blank");
+  }
 
   const handleClickLinked = () => {
     window.open("https://www.linkedin.com/in/jean-reyes-3027951b8/", "_blank");
@@ -37,12 +45,12 @@ export default function Home() {
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl">Hello</h1>
+            <h1 className="text-xl dark:text-gray-100">Hello</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer text-2xl"
+                  className="cursor-pointer text-2xl dark:text-gray-100"
                 />
               </li>
               <li>
@@ -55,22 +63,25 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10 ">
+          <div className="text-center p-5 ">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
               Jean Reyes
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl">Software Engineer</h3>
-            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto">
+            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-300">
               This is basically the about me section which i need to put alot of
               words for it to look good
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-            <AiFillTwitterCircle />
+          <p className="text-gray-900 dark:text-gray-100 text-2xl text-center py-6  ">How to get in contact with me</p>
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-900 dark:text-gray-100 ">
+            <AiFillGithub
+            onClick={handleClickGithub}
+            />
             <AiFillLinkedin
             onClick={handleClickLinked}
             />
-            <AiFillYoutube />
+            <AiFillMail />
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image src={deved} layout="fill" objectFit="cover" />
@@ -80,14 +91,14 @@ export default function Home() {
         <section>
           <div>
             <h3 className="text-3xl py-1">What I Offer</h3>
-            <p className="text-md py-2 leading-8 text-gray-800">
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               Write some text here about my journey
             </p>
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image
-                src={design}
+                src={backend_photo}
                 width={100}
                 height={100}
                 className="mx-auto"
@@ -126,61 +137,49 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1">Portfolio</h3>
-            <p>some import text to say something</p>
+            <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
+            <p className="dark:text-white">some import text to say something</p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1">
+            <div className=" basis-1/3 flex-1">
               <Image
-                src={web1}
+                src={anime_logo}
                 className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
                 layout="responsive"
               />
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className=" basis-1/3 flex-1">
               <Image
-                src={web2}
+                src={Tic_Tac_Toe}
                 className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
                 layout="responsive"
               />
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className=" basis-1/3 flex-1 flex justify-center items-center ">
               <Image
-                src={web3}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+                src={MARIO}
+                className="rounded-lg object-cover h-full"
                 layout="responsive"
               />
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className=" basis-1/3 flex-1">
               <Image
-                src={web4}
+                src={League_of_Legends}
                 className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
                 layout="responsive"
               />
             </div>
-            <div className="basis-1/3 flex-1 h-full">
+            <div className=" basis-1/3 flex-1 flex ">
               <Image
                 src={web5}
                 className="rounded-lg object-cover "
-                width={"100%"}
-                height={"100%"}
                 layout="responsive"
               />
             </div>
-            <div className="basis-1/3 flex-1 ">
+            <div className=" basis-1/3 flex-1 ">
               <Image
                 src={web6}
                 className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
                 layout="responsive"
               />
             </div>

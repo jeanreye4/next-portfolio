@@ -8,8 +8,8 @@ import {
 import Image from "next/image";
 import deved from "../public/dev-ed-wave.png";
 import backend_photo from "../public/backend-1.png";
-import code from "../public/code.png";
-import consulting from "../public/consulting.png";
+import frontend_img from "../public/frontend_img.png";
+import Data_Structures from "../public/Data_Structures.png";
 import anime_logo from "../public/anime-logo.png";
 import Tic_Tac_Toe from "../public/Tic_Tac_Toe.png";
 import MARIO from "../public/MARIO.png";
@@ -55,7 +55,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 cursor-pointer"
                   href="https://drive.google.com/file/d/18CVZC1IttUVVAerj3FmrAeNwKBoR-NuY/view?usp=share_link"
                 >
                   Resume
@@ -74,7 +74,7 @@ export default function Home() {
             </p>
           </div>
           <p className="text-gray-900 dark:text-gray-100 text-2xl text-center py-6  ">How to get in contact with me</p>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-900 dark:text-gray-100 ">
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-900 dark:text-gray-100 cursor-pointer ">
             <AiFillGithub
             onClick={handleClickGithub}
             />
@@ -111,7 +111,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Figma</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <Image src={code} width={100} height={100} className="mx-auto" />
+              <Image src={frontend_img} width={100} height={100} className="mx-auto" />
               <h3 className="text-lg font-medium pt-8 pb-2">My designs</h3>
               <p className="py-2">Some random words to take up space</p>
               <h4 className="py-4 text-deal-600">Tools I used</h4>
@@ -121,7 +121,7 @@ export default function Home() {
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image
-                src={consulting}
+                src={Data_Structures}
                 width={100}
                 height={100}
                 className="mx-auto"
@@ -141,45 +141,31 @@ export default function Home() {
             <p className="dark:text-white">some import text to say something</p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className=" basis-1/3 flex-1">
+            <div className=" basis-1/3 flex-1 ">
               <Image
                 src={anime_logo}
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover cursor-pointer"
                 layout="responsive"
               />
             </div>
             <div className=" basis-1/3 flex-1">
               <Image
                 src={Tic_Tac_Toe}
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover cursor-pointer"
                 layout="responsive"
               />
             </div>
-            <div className=" basis-1/3 flex-1 flex justify-center items-center ">
+            <div className=" basis-1/3 flex-1 flex ">
               <Image
                 src={MARIO}
-                className="rounded-lg object-cover h-full"
+                className="rounded-lg object-cover cursor-pointer"
                 layout="responsive"
               />
             </div>
             <div className=" basis-1/3 flex-1">
               <Image
                 src={League_of_Legends}
-                className="rounded-lg object-cover"
-                layout="responsive"
-              />
-            </div>
-            <div className=" basis-1/3 flex-1 flex ">
-              <Image
-                src={web5}
-                className="rounded-lg object-cover "
-                layout="responsive"
-              />
-            </div>
-            <div className=" basis-1/3 flex-1 ">
-              <Image
-                src={web6}
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover cursor-pointer"
                 layout="responsive"
               />
             </div>

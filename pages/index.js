@@ -6,23 +6,17 @@ import {
   AiFillMail,
 } from "react-icons/ai";
 import Image from "next/image";
-import deved from "../public/dev-ed-wave.png";
-import backend_photo from "../public/backend-1.png";
-import frontend_img from "../public/frontend_img.png";
-import Data_Structures from "../public/Data_Structures.png";
 import anime_logo from "../public/anime-logo.png";
 import Tic_Tac_Toe from "../public/Tic_Tac_Toe.png";
 import MARIO from "../public/MARIO.png";
 import League_of_Legends from "../public/League_of_Legends.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
 import { useState } from "react";
 import Link from 'next/link'; 
 
 export default function Home() {
 
   const handleClickMail = () => {
-    window.open("reyesjean3068@gmail.com");
+    window.open("malito:reyesjean3068@gmail.com");
   }
 
   const handleClickGithub = () => {
@@ -56,7 +50,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 cursor-pointer"
-                  href="https://drive.google.com/file/d/18CVZC1IttUVVAerj3FmrAeNwKBoR-NuY/view?usp=share_link"
+                  href="https://docs.google.com/document/d/1hsQIq363c7ZCVUBiAQ-Y92-j_I94AGRn/edit#heading=h.gjdgxs"
                 >
                   Resume
                 </a>
@@ -67,13 +61,12 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
               Jean Reyes
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl">Software Engineer</h3>
+            <h3 className="text-2xl py-2 md:text-3xl dark:text-white">Software Engineer</h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-300">
-              This is basically the about me section which i need to put alot of
-              words for it to look good
+              This is basically the about me section which i need to put alot of words for it to look good
             </p>
           </div>
-          <p className="text-gray-900 dark:text-gray-100 text-2xl text-center py-6  ">How to get in contact with me</p>
+          <p className="text-gray-900 dark:text-gray-100 text-2xl text-center py-6 ">How to get in contact with me</p>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-900 dark:text-gray-100 cursor-pointer ">
             <AiFillGithub
             onClick={handleClickGithub}
@@ -81,54 +74,43 @@ export default function Home() {
             <AiFillLinkedin
             onClick={handleClickLinked}
             />
-            <AiFillMail />
+            <a href="malito:ReyesJean3068@gmail.com"><AiFillMail/></a>
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
-            <Image src={deved} layout="fill" objectFit="cover" />
+          <div>
+            <h5 className="text-3xl dark:text-white">About ME</h5>
+            <p className="text-3xl dark:text-white">Write some text about myself and journey</p>
           </div>
         </section>
 
         <section>
           <div>
-            <h3 className="text-3xl py-1">What I Offer</h3>
+            <h3 className="text-3xl py-1 dark:text-white">What I Offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               Write some text here about my journey
             </p>
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <Image
-                src={backend_photo}
-                width={100}
-                height={100}
-                className="mx-auto"
-              />
-              <h3 className="text-lg font-medium pt-8 pb-2">My designs</h3>
+              <h3 className="text-lg font-medium pt-8 pb-2">BACKEND</h3>
               <p className="py-2">Some random words to take up space</p>
-              <h4 className="py-4 text-deal-600">Tools I used</h4>
-              <p className="text-gray-800 py-1">photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
+              <h4 className="py-4 text-deal-600">Languages I have used</h4>
+              <p className="text-gray-800 py-1">Python</p>
+              <p className="text-gray-800 py-1">Django</p>
+              <p className="text-gray-800 py-1">CSS</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <Image src={frontend_img} width={100} height={100} className="mx-auto" />
-              <h3 className="text-lg font-medium pt-8 pb-2">My designs</h3>
+              <h3 className="text-lg font-medium pt-8 pb-2">FRONTEND</h3>
               <p className="py-2">Some random words to take up space</p>
-              <h4 className="py-4 text-deal-600">Tools I used</h4>
-              <p className="text-gray-800 py-1">photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
+              <h4 className="py-4 text-deal-600">Languages I have used</h4>
+              <p className="text-gray-800 py-1">React</p>
+              <p className="text-gray-800 py-1">HTML</p>
+              <p className="text-gray-800 py-1">CSS</p>
+              <p className="text-gray-800 py-1">Javascript</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <Image
-                src={Data_Structures}
-                width={100}
-                height={100}
-                className="mx-auto"
-              />
-              <h3 className="text-lg font-medium pt-8 pb-2">My designs</h3>
+              <h3 className="text-lg font-medium pt-8 pb-2">DATA STRUCTURES AND ALGO</h3>
               <p className="py-2">Some random words to take up space</p>
-              <h4 className="py-4 text-deal-600">Tools I used</h4>
+              <h4 className="py-4 text-deal-600">Languages I have used</h4>
               <p className="text-gray-800 py-1">photoshop</p>
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">Figma</p>
@@ -147,6 +129,24 @@ export default function Home() {
                 className="rounded-lg object-cover cursor-pointer"
                 layout="responsive"
               />
+              <ul>
+                <li>
+                  <a
+                    className="text-gray-800 dark:text-gray-300 cursor-pointer list-none"
+                    href="https://github.com/jeanreye4/fullstack-anime-api"
+                  >
+                  CODE
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-gray-800 dark:text-gray-300 cursor-pointer list-none"
+                    href=""
+                  >
+                  WEBSITE
+                  </a>
+                </li>
+              </ul>
             </div>
             <div className=" basis-1/3 flex-1">
               <Image
@@ -154,6 +154,24 @@ export default function Home() {
                 className="rounded-lg object-cover cursor-pointer"
                 layout="responsive"
               />
+              <ul>
+                <li>
+                  <a
+                    className="text-gray-800 dark:text-gray-300 cursor-pointer list-none"
+                    href="https://github.com/jeanreye4/tic-tac-toe"
+                  >
+                  CODE
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-gray-800 dark:text-gray-300 cursor-pointer list-none"
+                    href="https://frontend-tic-tac-toe-game.netlify.app/"
+                  >
+                  WEBSITE
+                  </a>
+                </li>
+              </ul>
             </div>
             <div className=" basis-1/3 flex-1 flex ">
               <Image

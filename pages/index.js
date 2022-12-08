@@ -39,7 +39,7 @@ export default function Home() {
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl dark:text-gray-100">Hello</h1>
+            <h1 className="text-xl dark:text-gray-100">Jean Reyes</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -62,9 +62,6 @@ export default function Home() {
               Jean Reyes
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl dark:text-white">Software Engineer</h3>
-            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-300">
-              This is basically the about me section which i need to put alot of words for it to look good
-            </p>
           </div>
           <p className="text-gray-900 dark:text-gray-100 text-2xl text-center py-6 ">How to get in contact with me</p>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-900 dark:text-gray-100 cursor-pointer ">
@@ -77,8 +74,13 @@ export default function Home() {
             <a href="malito:ReyesJean3068@gmail.com"><AiFillMail/></a>
           </div>
           <div>
-            <h5 className="text-3xl dark:text-white">About ME</h5>
-            <p className="text-3xl dark:text-white">Write some text about myself and journey</p>
+            <h5 className="text-5xl dark:text-white mt-7 underline text-center">About Me</h5>
+            <div className="">
+              <ul>
+                <li></li>
+                <li>Made web application with front end, back end and full stack</li>
+              </ul>
+            </div>
           </div>
         </section>
 
@@ -89,6 +91,7 @@ export default function Home() {
               Write some text here about my journey
             </p>
           </div>
+          <div className="">
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <h3 className="text-lg font-medium pt-8 pb-2">BACKEND</h3>
@@ -105,15 +108,8 @@ export default function Home() {
               <p className="text-gray-800 py-1">React</p>
               <p className="text-gray-800 py-1">HTML</p>
               <p className="text-gray-800 py-1">CSS</p>
-              <p className="text-gray-800 py-1">Javascript</p>
+                <p className="text-gray-800 py-1">Javascript</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <h3 className="text-lg font-medium pt-8 pb-2">DATA STRUCTURES AND ALGO</h3>
-              <p className="py-2">Some random words to take up space</p>
-              <h4 className="py-4 text-deal-600">Languages I have used</h4>
-              <p className="text-gray-800 py-1">photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
             </div>
           </div>
         </section>
@@ -126,10 +122,10 @@ export default function Home() {
             <div className=" basis-1/3 flex-1 ">
               <Image
                 src={anime_logo}
-                className="rounded-lg object-cover cursor-pointer"
+                className="rounded-lg object-cover "
                 layout="responsive"
               />
-              <ul>
+              <ul className="flex justify-between">
                 <li>
                   <a
                     className="text-gray-800 dark:text-gray-300 cursor-pointer list-none"
@@ -140,8 +136,8 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    className="text-gray-800 dark:text-gray-300 cursor-pointer list-none"
-                    href=""
+                    className="text-gray-800 dark:text-gray-300 cursor-pointer list-none float-right"
+                    href="https://fullstack-anime.netlify.app"
                   >
                   WEBSITE
                   </a>
@@ -151,10 +147,10 @@ export default function Home() {
             <div className=" basis-1/3 flex-1">
               <Image
                 src={Tic_Tac_Toe}
-                className="rounded-lg object-cover cursor-pointer"
+                className="rounded-lg object-cover"
                 layout="responsive"
               />
-              <ul>
+              <ul className="flex justify-between">
                 <li>
                   <a
                     className="text-gray-800 dark:text-gray-300 cursor-pointer list-none"
@@ -165,7 +161,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    className="text-gray-800 dark:text-gray-300 cursor-pointer list-none"
+                    className="text-gray-800 dark:text-gray-300 cursor-pointer list-none float-right"
                     href="https://frontend-tic-tac-toe-game.netlify.app/"
                   >
                   WEBSITE
@@ -173,19 +169,55 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className=" basis-1/3 flex-1 flex ">
+            <div className=" basis-1/3 flex-1 ">
               <Image
                 src={MARIO}
-                className="rounded-lg object-cover cursor-pointer"
+                className="rounded-lg object-cover "
                 layout="responsive"
               />
+              <ul className="flex justify-between">
+                <li>
+                  <a
+                    className="text-gray-800 dark:text-gray-300 cursor-pointer list-none"
+                    href="https://github.com/jeanreye4/Mario-ui-project"
+                  >
+                  CODE
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-gray-800 dark:text-gray-300 cursor-pointer list-none float-right"
+                    href="https://api-project-jr.netlify.app/"
+                  >
+                  WEBSITE
+                  </a>
+                </li>
+              </ul>
             </div>
             <div className=" basis-1/3 flex-1">
               <Image
                 src={League_of_Legends}
-                className="rounded-lg object-cover cursor-pointer"
+                className="rounded-lg object-cover "
                 layout="responsive"
               />
+              <ul className="flex justify-between">
+                <li>
+                  <a
+                    className="text-gray-800 dark:text-gray-300 cursor-pointer list-none"
+                    href="https://github.com/jeanreye4/Legendary-Slayers-FE"
+                  >
+                  CODE
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-gray-800 dark:text-gray-300 cursor-pointer list-none float-right "
+                    href="https://legendsofleague.netlify.app/"
+                  >
+                  WEBSITE
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </section>

@@ -1,27 +1,22 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import {
-  AiFillGithub,
-  AiFillLinkedin,
-  AiFillMail,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
 import Image from "next/image";
 import anime_logo from "../public/anime-logo.png";
 import Tic_Tac_Toe from "../public/Tic_Tac_Toe.png";
 import MARIO from "../public/MARIO.png";
 import League_of_Legends from "../public/League_of_Legends.png";
 import { useState } from "react";
-import Link from 'next/link'; 
+import Link from "next/link";
 
 export default function Home() {
-
   const handleClickMail = () => {
     window.open("malito:reyesjean3068@gmail.com");
-  }
+  };
 
   const handleClickGithub = () => {
     window.open("https://github.com/jeanreye4", "_blank");
-  }
+  };
 
   const handleClickLinked = () => {
     window.open("https://www.linkedin.com/in/jean-reyes-3027951b8/", "_blank");
@@ -61,68 +56,72 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
               Jean Reyes
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl dark:text-white">Software Engineer</h3>
+            <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
+              Software Engineer
+            </h3>
           </div>
-          <p className="text-gray-900 dark:text-gray-100 text-2xl text-center py-6 ">How to get in contact with me</p>
+          <p className="text-gray-900 dark:text-gray-100 text-2xl text-center py-6 ">
+            How to get in contact with me
+          </p>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-900 dark:text-gray-100 cursor-pointer ">
-            <AiFillGithub
-            onClick={handleClickGithub}
-            />
-            <AiFillLinkedin
-            onClick={handleClickLinked}
-            />
-            <a href="malito:ReyesJean3068@gmail.com"><AiFillMail/></a>
+            <AiFillGithub onClick={handleClickGithub} />
+            <AiFillLinkedin onClick={handleClickLinked} />
+            <a href="malito:ReyesJean3068@gmail.com">
+              <AiFillMail />
+            </a>
           </div>
           <div>
-            <h5 className="text-5xl dark:text-white mt-7 underline text-center">About Me</h5>
-            <div className="flex">
-              <div>
-              <ul>
-                <li></li>
-                <li>Made web application with front end, back end and full stack</li>
-                </ul>
-              </div>
-              <h3>I have 3 months </h3>
+            <h5 className="text-5xl dark:text-white mt-7 underline text-center">
+              About Me
+            </h5>
+            <div>
+              <p className="text-xl py-4 dark:text-white">I am adept at handling multiple design projects in a fast paced environment. Excellent at time management, organization, problem solving and meeting deadlines.</p>
+              <p className="dark:text-white text-xl">I have 3 months of experience with frontend, backend, and fullstack web development.  </p>
             </div>
           </div>
         </section>
 
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white">What I do when I'm not coding</h3>
-            <div className="flex">
-              <div>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-              My personal interest:
-              </p>
-              <li className="text-2xl">I am a very Big into traveling the world seeing new cultures and trying new things. </li>
-              <li className="text-2xl">I am outdoorsy I love playing sports, going on hikes and trying new activities. </li>
-                <li className="text-2xl"></li>
+            <h3 className="text-3xl py-1 dark:text-white text-center">
+              What I do when I'm not coding
+            </h3>
+            <div className="basis-1/3 flex-1">
+              <div className="py-5 ">
+                <p className="text-md py-2 leading-8 text-gray-800 dark:text-white text-xl">
+                  My personal interest:
+                </p>
+                <li className="text-2xl dark:text-white">
+                  I am a very Big into traveling the world seeing new cultures
+                  and trying new things.
+                </li>
+                <li className="text-2xl dark:text-white">
+                  I am outdoorsy I love playing sports, going on hikes and
+                  trying new activities.
+                </li>
               </div>
-              <h1 className="text-2xl">Recents Projects</h1>
-                <li></li>
-                <li></li>
             </div>
           </div>
-          <div className="">
-          <div className="lg:flex gap-10 ">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <h3 className="text-lg font-medium pt-8 pb-2">BACKEND</h3>
-              <p className="py-2">Some random words to take up space</p>
-              <h4 className="py-4 text-deal-600">Languages I have used</h4>
-              <p className="text-gray-800 py-1">Python</p>
-              <p className="text-gray-800 py-1">Django</p>
-              <p className="text-gray-800 py-1">CSS</p>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <h3 className="text-lg font-medium pt-8 pb-2">FRONTEND</h3>
-              <p className="py-2">Some random words to take up space</p>
-              <h4 className="py-4 text-deal-600">Languages I have used</h4>
-              <p className="text-gray-800 py-1">React</p>
-              <p className="text-gray-800 py-1">HTML</p>
-              <p className="text-gray-800 py-1">CSS</p>
+
+          <div className="py-3">
+            <div className="lg:flex gap-10 ">
+              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+                <h3 className="text-lg font-medium pt-8 pb-2">BACKEND</h3>
+                <p className="py-2">Some random words to take up space</p>
+                <h4 className="py-4 text-deal-600">Languages I have used</h4>
+                <p className="text-gray-800 py-1">Python</p>
+                <p className="text-gray-800 py-1">Django</p>
+                <p className="text-gray-800 py-1">CSS</p>
+              </div>
+              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+                <h3 className="text-lg font-medium pt-8 pb-2">FRONTEND</h3>
+                <p className="py-2">Some random words to take up space</p>
+                <h4 className="py-4 text-deal-600">Languages I have used</h4>
+                <p className="text-gray-800 py-1">React</p>
+                <p className="text-gray-800 py-1">HTML</p>
+                <p className="text-gray-800 py-1">CSS</p>
                 <p className="text-gray-800 py-1">Javascript</p>
-            </div>
+              </div>
             </div>
           </div>
         </section>
@@ -144,7 +143,7 @@ export default function Home() {
                     className="text-gray-800 dark:text-gray-300 cursor-pointer list-none"
                     href="https://github.com/jeanreye4/fullstack-anime-api"
                   >
-                  CODE
+                    CODE
                   </a>
                 </li>
                 <li>
@@ -152,7 +151,7 @@ export default function Home() {
                     className="text-gray-800 dark:text-gray-300 cursor-pointer list-none float-right"
                     href="https://fullstack-anime.netlify.app"
                   >
-                  WEBSITE
+                    WEBSITE
                   </a>
                 </li>
               </ul>
@@ -169,7 +168,7 @@ export default function Home() {
                     className="text-gray-800 dark:text-gray-300 cursor-pointer list-none"
                     href="https://github.com/jeanreye4/tic-tac-toe"
                   >
-                  CODE
+                    CODE
                   </a>
                 </li>
                 <li>
@@ -177,7 +176,7 @@ export default function Home() {
                     className="text-gray-800 dark:text-gray-300 cursor-pointer list-none float-right"
                     href="https://frontend-tic-tac-toe-game.netlify.app/"
                   >
-                  WEBSITE
+                    WEBSITE
                   </a>
                 </li>
               </ul>
@@ -194,7 +193,7 @@ export default function Home() {
                     className="text-gray-800 dark:text-gray-300 cursor-pointer list-none"
                     href="https://github.com/jeanreye4/Mario-ui-project"
                   >
-                  CODE
+                    CODE
                   </a>
                 </li>
                 <li>
@@ -202,7 +201,7 @@ export default function Home() {
                     className="text-gray-800 dark:text-gray-300 cursor-pointer list-none float-right"
                     href="https://api-project-jr.netlify.app/"
                   >
-                  WEBSITE
+                    WEBSITE
                   </a>
                 </li>
               </ul>
@@ -219,7 +218,7 @@ export default function Home() {
                     className="text-gray-800 dark:text-gray-300 cursor-pointer list-none"
                     href="https://github.com/jeanreye4/Legendary-Slayers-FE"
                   >
-                  CODE
+                    CODE
                   </a>
                 </li>
                 <li>
@@ -227,7 +226,7 @@ export default function Home() {
                     className="text-gray-800 dark:text-gray-300 cursor-pointer list-none float-right "
                     href="https://legendsofleague.netlify.app/"
                   >
-                  WEBSITE
+                    WEBSITE
                   </a>
                 </li>
               </ul>

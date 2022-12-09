@@ -75,24 +75,37 @@ export default function Home() {
           </div>
           <div>
             <h5 className="text-5xl dark:text-white mt-7 underline text-center">About Me</h5>
-            <div className="">
+            <div className="flex">
+              <div>
               <ul>
                 <li></li>
                 <li>Made web application with front end, back end and full stack</li>
-              </ul>
+                </ul>
+              </div>
+              <h3>I have 3 months </h3>
             </div>
           </div>
         </section>
 
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white">What I Offer</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-              Write some text here about my journey
-            </p>
+            <h3 className="text-3xl py-1 dark:text-white">What I do when I'm not coding</h3>
+            <div className="flex">
+              <div>
+              <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
+              My personal interest:
+              </p>
+              <li className="text-2xl">I am a very Big into traveling the world seeing new cultures and trying new things. </li>
+              <li className="text-2xl">I am outdoorsy I love playing sports, going on hikes and trying new activities. </li>
+                <li className="text-2xl"></li>
+              </div>
+              <h1 className="text-2xl">Recents Projects</h1>
+                <li></li>
+                <li></li>
+            </div>
           </div>
           <div className="">
-          <div className="lg:flex gap-10">
+          <div className="lg:flex gap-10 ">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <h3 className="text-lg font-medium pt-8 pb-2">BACKEND</h3>
               <p className="py-2">Some random words to take up space</p>

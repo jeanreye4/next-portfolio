@@ -32,7 +32,7 @@ export default function Home() {
 
       <main className="bg-white  dark:bg-gray-900">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between px-10 md:px-20 lg:px-40">
+          <nav className="py-10 mb-12 flex justify-between px-10 md:px-20 lg:px-40 ">
             <h1 className="text-3xl dark:text-gray-100">Jean Reyes</h1>
             <ul className="flex items-center">
               <li>
@@ -224,10 +224,10 @@ export default function Home() {
         </section>
         <section>
         <div className="py-10 bg-black w-full">
-        <p className="text-gray-900 dark:text-white text-4xl text-center py-6 ">
+        <p className="text-white dark:text-white text-4xl text-center py-6 ">
             How to get in contact with me
           </p>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-900 dark:text-gray-100 cursor-pointer ">
+          <div className="text-5xl flex justify-center gap-16 py-3 text-white dark:text-white cursor-pointer ">
             <AiFillGithub onClick={handleClickGithub} />
             <AiFillLinkedin onClick={handleClickLinked} />
             <a href="malito:ReyesJean3068@gmail.com">

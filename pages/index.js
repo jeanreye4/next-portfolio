@@ -7,7 +7,6 @@ import Tic_Tac_Toe from "../public/Tic_Tac_Toe.png";
 import MARIO from "../public/MARIO.png";
 import League_of_Legends from "../public/League_of_Legends.png";
 import { useState } from "react";
-import Link from "next/link";
 
 export default function Home() {
   const handleClickMail = () => {
@@ -31,10 +30,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+      <main className="bg-white  dark:bg-gray-900">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl dark:text-gray-100">Jean Reyes</h1>
+          <nav className="py-10 mb-12 flex justify-between px-10 md:px-20 lg:px-40">
+            <h1 className="text-3xl dark:text-gray-100">Jean Reyes</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -45,7 +44,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 cursor-pointer"
-                  href="https://docs.google.com/document/d/1hsQIq363c7ZCVUBiAQ-Y92-j_I94AGRn/edit#heading=h.gjdgxs"
+                  href="https://drive.google.com/file/d/1-rf4cNGbVyUN5gbHeGJ9cHx2UsikmDRP/view?usp=share_link"
                 >
                   Resume
                 </a>
@@ -60,21 +59,11 @@ export default function Home() {
               Software Engineer
             </h3>
           </div>
-          <p className="text-gray-900 dark:text-gray-100 text-2xl text-center py-6 ">
-            How to get in contact with me
-          </p>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-900 dark:text-gray-100 cursor-pointer ">
-            <AiFillGithub onClick={handleClickGithub} />
-            <AiFillLinkedin onClick={handleClickLinked} />
-            <a href="malito:ReyesJean3068@gmail.com">
-              <AiFillMail />
-            </a>
-          </div>
           <div>
             <h5 className="text-5xl dark:text-white mt-7 underline text-center">
               About Me
             </h5>
-            <div>
+            <div className="px-10 md:px-20 lg:px-40">
               <p className="text-xl py-4 dark:text-white">I am adept at handling multiple design projects in a fast paced environment. Excellent at time management, organization, problem solving and meeting deadlines.</p>
               <p className="dark:text-white text-xl">I have 3 months of experience with frontend, backend, and fullstack web development.  </p>
             </div>
@@ -82,7 +71,7 @@ export default function Home() {
         </section>
 
         <section>
-          <div>
+          <div className="px-10 md:px-20 lg:px-40">
             <h3 className="text-3xl py-1 dark:text-white text-center">
               What I do when I'm not coding
             </h3>
@@ -103,8 +92,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="py-3">
-            <div className="lg:flex gap-10 ">
+          <div className="py-3 px-10 md:px-20 lg:px-40">
+            <div className="lg:flex gap-10 justify-center">
               <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
                 <h3 className="text-lg font-medium pt-8 pb-2">BACKEND</h3>
                 <p className="py-2">Some random words to take up space</p>
@@ -127,9 +116,10 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white">Projects</h3>
+            <h3 className="text-5xl py-10 dark:text-white text-center">Projects</h3>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap px-10 md:px-20 lg:px-40 ">
             <div className=" basis-1/3 flex-1 ">
               <Image
                 src={anime_logo}
@@ -222,7 +212,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    className="text-gray-800 dark:text-gray-300 cursor-pointer list-none float-right "
+                    className="text-gray-800 dark:text-gray-300 cursor-pointer list-none float-right"
                     href="https://legendsofleague.netlify.app/"
                   >
                     WEBSITE
@@ -230,6 +220,20 @@ export default function Home() {
                 </li>
               </ul>
             </div>
+          </div>
+        </section>
+        <section>
+        <div className="py-10 bg-black w-full">
+        <p className="text-gray-900 dark:text-white text-4xl text-center py-6 ">
+            How to get in contact with me
+          </p>
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-900 dark:text-gray-100 cursor-pointer ">
+            <AiFillGithub onClick={handleClickGithub} />
+            <AiFillLinkedin onClick={handleClickLinked} />
+            <a href="malito:ReyesJean3068@gmail.com">
+              <AiFillMail />
+              </a>
+              </div>
           </div>
         </section>
       </main>

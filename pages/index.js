@@ -32,16 +32,16 @@ export default function Home() {
 
       <main className="bg-white  dark:bg-gray-900">
         <section className="min-h-screen">
-          <nav className="fixed w-full py-10 mb-12 flex justify-between px-10 md:px-20 lg:px-40 ">
-            <h1 className="text-3xl dark:text-gray-100">Jean Reyes</h1>
-              <p className="text-2xl">About Me</p>
-              <p className="text-2xl">Projects</p>
-              <p className="text-2xl">Contact Me</p>
+          <nav className="fixed w-full py-3 flex justify-between px-10 md:px-20 lg:px-40 bg-black">
+            <h1 className="text-3xl dark:text-gray-100 text-white">Jean Reyes</h1>
+              <p className="text-2xl text-white cursor-pointer">About Me</p>
+              <p className="text-2xl text-white cursor-pointer">Projects</p>
+              <p className="text-2xl text-white cursor-pointer">Contact Me</p>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer text-2xl dark:text-gray-100"
+                  className="cursor-pointer text-2xl dark:text-gray-100 text-white"
                 />
               </li>
               <li>
@@ -226,7 +226,7 @@ export default function Home() {
           </div>
         </section>
         <section>
-        <div className="py-10 bg-black w-full">
+        <div className="py-3 bg-black w-full">
         <p className="text-white dark:text-white text-4xl text-center py-6 ">
             How to get in contact with me
           </p>

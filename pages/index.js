@@ -32,8 +32,11 @@ export default function Home() {
 
       <main className="bg-white  dark:bg-gray-900">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between px-10 md:px-20 lg:px-40 ">
+          <nav className="fixed w-full py-10 mb-12 flex justify-between px-10 md:px-20 lg:px-40 ">
             <h1 className="text-3xl dark:text-gray-100">Jean Reyes</h1>
+              <p className="text-2xl">About Me</p>
+              <p className="text-2xl">Projects</p>
+              <p className="text-2xl">Contact Me</p>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -51,7 +54,7 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-5 ">
+          <div className="text-center p-5 py-40 ">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
               Jean Reyes
             </h2>
@@ -94,17 +97,17 @@ export default function Home() {
 
           <div className="py-3 px-10 md:px-20 lg:px-40">
             <div className="lg:flex gap-10 justify-center">
-              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white w-96">
                 <h3 className="text-lg font-medium pt-8 pb-2">BACKEND</h3>
-                <p className="py-2">Some random words to take up space</p>
+                
                 <h4 className="py-4 text-deal-600">Languages I have used</h4>
                 <p className="text-gray-800 py-1">Python</p>
                 <p className="text-gray-800 py-1">Django</p>
-                <p className="text-gray-800 py-1">CSS</p>
+                <p className="text-gray-800 py-1">MongoDB/Mongoose</p>
+                <p className="text-gray-800 py-1">Express</p>
               </div>
-              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white w-96">
                 <h3 className="text-lg font-medium pt-8 pb-2">FRONTEND</h3>
-                <p className="py-2">Some random words to take up space</p>
                 <h4 className="py-4 text-deal-600">Languages I have used</h4>
                 <p className="text-gray-800 py-1">React</p>
                 <p className="text-gray-800 py-1">HTML</p>

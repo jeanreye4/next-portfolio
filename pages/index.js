@@ -101,18 +101,18 @@ export default function Home() {
                 <h3 className="text-lg font-medium pt-8 pb-2">BACKEND</h3>
                 
                 <h4 className="py-4 text-deal-600">Languages I have used</h4>
-                <p className="text-gray-800 py-1">Python</p>
-                <p className="text-gray-800 py-1">Django</p>
-                <p className="text-gray-800 py-1">MongoDB/Mongoose</p>
-                <p className="text-gray-800 py-1">Express</p>
+                <p className="text-gray-800 py-1 text-xl">Python</p>
+                <p className="text-gray-800 py-1 text-xl">Django</p>
+                <p className="text-gray-800 py-1 text-xl">MongoDB/Mongoose</p>
+                <p className="text-gray-800 py-1 text-xl">Express</p>
               </div>
               <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white w-96">
                 <h3 className="text-lg font-medium pt-8 pb-2">FRONTEND</h3>
                 <h4 className="py-4 text-deal-600">Languages I have used</h4>
-                <p className="text-gray-800 py-1">React</p>
-                <p className="text-gray-800 py-1">HTML</p>
-                <p className="text-gray-800 py-1">CSS</p>
-                <p className="text-gray-800 py-1">Javascript</p>
+                <p className="text-gray-800 py-1 text-xl">React</p>
+                <p className="text-gray-800 py-1 text-xl">HTML</p>
+                <p className="text-gray-800 py-1 text-xl">CSS</p>
+                <p className="text-gray-800 py-1 text-xl">Javascript</p>
               </div>
             </div>
           </div>

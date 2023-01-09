@@ -67,8 +67,7 @@ export default function Home() {
               About Me
             </h5>
             <div className="px-10 md:px-20 lg:px-40">
-              <p className="text-xl py-4 dark:text-white">I am adept at handling multiple design projects in a fast paced environment. Excellent at time management, organization, problem solving and meeting deadlines.</p>
-              <p className="dark:text-white text-xl">I have 3 months of experience with frontend, backend, and fullstack web development.  </p>
+              <p className="text-xl py-4 dark:text-white">I am a Software developer with a passion for problem-solving and a special interest in back-end applications. My background in Information Technology allows me to combine my skills in customer service experience, communication, collaboration, and consistent debugging to create a successful environment for the clients and my colleagues. As a fast learner with solid time management and multitasking skills, I provide daily support for a variety of stakeholders as needed. I see challenges as a puzzle that can be solved if the correct strategy is implemented but part of the growth comes from the process of trial and error. I ultimately seek an entry-level position at a company that provides me with an opportunity to learn, grow, and continue to master the craft.</p>
             </div>
           </div>
         </section>
@@ -80,9 +79,6 @@ export default function Home() {
             </h3>
             <div className="basis-1/3 flex-1">
               <div className="py-5 ">
-                <p className="text-md py-2 leading-8 text-gray-800 dark:text-white text-xl">
-                  My personal interest:
-                </p>
                 <li className="text-2xl dark:text-white">
                   I am a very Big into traveling the world seeing new cultures
                   and trying new things.

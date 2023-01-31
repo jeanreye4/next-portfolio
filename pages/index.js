@@ -34,9 +34,6 @@ export default function Home() {
         <section className="min-h-screen">
           <nav className="fixed w-full py-3 flex justify-between px-10 md:px-20 lg:px-40 bg-black">
             <h1 className="text-3xl dark:text-gray-100 text-white">Jean Reyes</h1>
-              <p className="text-2xl text-white cursor-pointer">About Me</p>
-              <p className="text-2xl text-white cursor-pointer">Projects</p>
-              <p className="text-2xl text-white cursor-pointer">Contact Me</p>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill

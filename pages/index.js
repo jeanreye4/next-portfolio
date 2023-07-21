@@ -44,7 +44,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 cursor-pointer"
-                  href="https://drive.google.com/file/d/1-rf4cNGbVyUN5gbHeGJ9cHx2UsikmDRP/view?usp=share_link"
+                  href="https://docs.google.com/document/d/1md1WypjeUMJjL1MmcIkj9FVfiPGQTkpx/edit?usp=drive_link&ouid=101892945415600183159&rtpof=true&sd=true"
                 >
                   Resume
                 </a>
@@ -97,7 +97,7 @@ export default function Home() {
                 <p className="text-gray-800 py-1 text-xl">Python</p>
                 <p className="text-gray-800 py-1 text-xl">Django</p>
                 <p className="text-gray-800 py-1 text-xl">MongoDB/Mongoose</p>
-                <p className="text-gray-800 py-1 text-xl">Express</p>
+                <p className="text-gray-800 py-1 text-xl">Java</p>
               </div>
               <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white w-96">
                 <h3 className="text-lg font-medium pt-8 pb-2">FRONTEND</h3>
@@ -226,9 +226,6 @@ export default function Home() {
           <div className="text-5xl flex justify-center gap-16 py-3 text-white dark:text-white cursor-pointer ">
             <AiFillGithub onClick={handleClickGithub} />
             <AiFillLinkedin onClick={handleClickLinked} />
-            <a href="malito:ReyesJean3068@gmail.com">
-              <AiFillMail />
-              </a>
               </div>
           </div>
         </section>

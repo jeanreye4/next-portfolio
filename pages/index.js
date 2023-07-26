@@ -15,7 +15,7 @@ export default function Home() {
   };
 
   const handleClickLinked = () => {
-    window.open("www.linkedin.com/in/jean-reyes-swe-engineer", "_blank");
+    window.open("https://www.linkedin.com/in/jean-reyes-swe-engineer/", "_blank");
   };
 
   const [darkMode, setDarkMode] = useState(false);

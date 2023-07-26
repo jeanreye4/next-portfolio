@@ -9,16 +9,13 @@ import League_of_Legends from "../public/League_of_Legends.png";
 import { useState } from "react";
 
 export default function Home() {
-  const handleClickMail = () => {
-    window.open("malito:reyesjean3068@gmail.com");
-  };
-
+  
   const handleClickGithub = () => {
     window.open("https://github.com/jeanreye4", "_blank");
   };
 
   const handleClickLinked = () => {
-    window.open("https://www.linkedin.com/in/jean-reyes-3027951b8/", "_blank");
+    window.open("www.linkedin.com/in/jean-reyes-swe-engineer", "_blank");
   };
 
   const [darkMode, setDarkMode] = useState(false);
@@ -89,8 +86,8 @@ export default function Home() {
           </div>
 
           <div className="py-3 px-10 md:px-20 lg:px-40">
-            <div className="lg:flex gap-10 justify-center">
-              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white w-96">
+            <div className="lg:flex gap-10 justify-center ">
+              <div className="text-center shadow-lg m-auto rounded-xl my-10 dark:bg-white w-96">
                 <h3 className="text-lg font-medium pt-8 pb-2">BACKEND</h3>
                 
                 <h4 className="py-4 text-deal-600">Languages I have used</h4>
@@ -99,7 +96,7 @@ export default function Home() {
                 <p className="text-gray-800 py-1 text-xl">MongoDB/Mongoose</p>
                 <p className="text-gray-800 py-1 text-xl">Java</p>
               </div>
-              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white w-96">
+              <div className="text-center shadow-lg m-auto rounded-xl my-10 dark:bg-white w-96">
                 <h3 className="text-lg font-medium pt-8 pb-2">FRONTEND</h3>
                 <h4 className="py-4 text-deal-600">Languages I have used</h4>
                 <p className="text-gray-800 py-1 text-xl">React</p>

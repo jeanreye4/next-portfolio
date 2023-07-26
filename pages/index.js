@@ -74,8 +74,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <div className="py-5 ">
                 <li className="text-2xl dark:text-white">
-                  I am a very Big into traveling the world seeing new cultures
-                  and trying new things.
+                  I am a very BIG into traveling the world and seeing new cultures experiencing new things.
                 </li>
                 <li className="text-2xl dark:text-white">
                   I am outdoorsy I love playing sports, going on hikes and
